@@ -1,0 +1,26 @@
+/* universal selector for full */
+*{
+    background-color: gray;
+
+}
+/* element selector */
+
+h2{
+    color: palevioletred;
+    font-style: italic;
+    background-color: blue;
+    font-weight: 500;
+    font-size: 30px;
+}
+/* id selector */
+
+input{
+    border-radius: 2px solid black;
+    width: 100px;
+    height: 20px;
+
+}
+/* class selector */
+.btn{
+
+}
