@@ -24,3 +24,15 @@ input{
 .btn{
 
 }
+.HTML{
+    text-align: right ;
+    text-decoration: wavy;
+   text-transform: uppercase;
+    font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+    font-size: 40px;
+    font-weight: 200px;
+    color: brown;
+    border: 2px solid black;
+    border-radius: 3px;
+}
+
