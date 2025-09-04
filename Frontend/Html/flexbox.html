@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Flexbox model</title>
+    <link rel="stylesheet" href="/Frontend/Css/flexbox.css">
+    <style>
+        body {
+            height: 500px;
+            width: 500px;
+            background-color: aqua;
+            display: flex;
+            flex-direction: row;
+
+
+        }
+
+        div {
+            height: 100px;
+            width: 100px;
+            background-color: blueviolet;
+            margin: 10px;
+        }
+
+        .box1 {
+
+
+            background-color: brown;
+        }
+
+        .box2 {
+            visibility: hidden;
+            background-color: blue;
+        }
+
+        .box3 {
+            background-color: black;
+        }
+    </style>
+</head>
+
+<body>
+    <!-- Flexbox model -->
+
+    <!-- <div class="parent">
+        <div class="child" id="box"></div>
+        <div class="child" id="box1"></div>
+        <div class="child" id="box2"></div>
+        <div class="child" id="box3"></div>
+     </div> -->
+
+    <!-- flexbox model, flex direction, flex wrap, allign items, justify content -->
+
+    <!-- <div class="nav">
+        <ul>
+            <li>Home</li>
+            <li>About Us</li>
+            <li>Our work</li>
+            <li>Contact Us</li>
+        </ul>
+     </div>
+
+     <br>
+     Display propert(inline, block. inline block, none, visiblity : hidden) -->
+
+    <div style="display: inline-block; background-color: blueviolet; color: black; height: 200px; padding: 20px; ">
+        This is a block element.
+      </div><br>
+    <div  class="box1"></div>
+    <div class="box2"></div>
+    <div class="box3"></div>
+</body>
+
+</html>

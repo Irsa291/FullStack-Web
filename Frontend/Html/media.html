@@ -1,52 +1,133 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
-    <style>
-        /* auto  */
-        *{
-            background-image: url('/Frontend/Html/smile.jpg');
-            
-            background-size: cover;
-        }
-        p{
-            color: antiquewhite;
-            color: #090909;
-            color: #3f4;
-            color: #ffeeff;
-            columns: rgb(111,000,000);
-            columns: rgb(000,111,000);
-            color: rgba(0, 255, 255, 0.473);
-        }
-        .box{
-            background-image: url('/Frnd.jpeg');
-            height: 100px;
-            width: 100px;
-        }
-        
-    </style>
-</head>
-<body>
-    <!-- Clr properties,image,media -->
-    <header>
-        <nav>
 
-        </nav>
-    </header>
-    <main>
-        <h2>Hello</h2>
-        <p>Color Properties.</p>
-         <!-- img -->
-        <div class="box"></div>
-       <!-- video -->
-        <video style="height: 250px width: 250px; " src="/DeliciousFood - Google Chrome 2024-08-30 07-47-31.mp4"></video><br>
-        <iframe style="height: 250px width: 250px; " src="https://www.youtube.com/embed/avsyYZz88nw?si=JEQm8HU6egAt3Mh8" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
-       <!-- audio  -->
-        <audio controls >     
-       <source src="/Brdy_music.mpeg"></audio>
-    </main>
-    <footer></footer>
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+  <style>
+    /*Media Queries */
+    /* For Desktop */
+    @media (max-width:1200px) {
+      p {
+        font-size: 56px;
+      }
+    }
+
+    /* For small laptop */
+    @media (max-width:1024px) {
+      p {
+        font-size: 46px;
+      }
+
+      .clr {
+        width: 1024px;
+        background-color: aqua;
+      }
+    }
+
+    /* For tablet */
+    @media (max-width:768px) {
+      p {
+        font-size: 36px;
+      }
+
+      .clr {
+        width: 768px;
+        background-color: darkblue;
+      }
+    }
+
+    /* For mobile */
+    @media (max-width:478px) {
+      p {
+        font-size: 20px;
+      }
+
+      .clr {
+        width: 478px;
+        background-color: crimson;
+      }
+    }
+
+    h2 {
+      color: black;
+    }
+
+    p {
+      color: rgba(0, 255, 255, 0.7);
+    }
+
+    div {
+      height: 400px;
+      width: 300px;
+      margin-top: 50px;
+      background-color: white;
+      margin: 30px;
+    }
+
+    .box {
+      background-image: url("./smile.jpg");
+      background-size: auto;
+    }
+
+    .box2 {
+      background-image: url("./smile.jpg");
+      background-size: contain;
+      background-repeat: no-repeat;
+    }
+
+    .box3 {
+      background-image: url("./smile.jpg");
+      background-size: cover;
+    }
+  </style>
+</head>
+
+<body>
+  <!-- Clr properties,image,media -->
+  <header>
+    <div class="nav">
+      <nav></nav>
+    </div>
+  </header>
+
+  <main>
+    <h2>Hello</h2>
+    <p>Color Properties.</p>
+
+    <!-- img -->
+    <img src="./Frnd.jpeg" alt="Frnd" height="250" width="250">
+
+    <div class="box">Picture</div>
+    <div class="box2"></div>
+    <div class="box3"></div>
+
+    <!-- video -->
+    <video height="300" width="300" controls>
+      <source src="./DeliciousFood.mp4" type="video/mp4">
+      Your browser does not support the video tag.
+    </video><br>
+
+    <!-- iframe -->
+    <iframe style="height: 250px; width: 250px;" 
+      src="https://www.youtube.com/embed/avsyYZz88nw?si=JEQm8HU6egAt3Mh8"
+      title="YouTube video player" frameborder="0"
+      allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+      referrerpolicy="strict-origin-when-cross-origin" allowfullscreen>
+    </iframe>
+
+    <!-- audio -->
+    <audio controls>
+      <source src="./Brdy_music.mpeg" type="audio/mpeg">
+      Your browser does not support the audio tag.
+    </audio>
+
+    <!-- media query -->
+    <div class="clr" style="width: 1200px; height: 800px; background-color: #3f4;"></div>
+  </main>
+
+  <footer>
+  </footer>
 </body>
 </html>
